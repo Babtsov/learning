@@ -1,0 +1,24 @@
+git init |
+git status | to see which files are not tracked (inspects the contents of the working directory and staging area)
+git add filename filename_2 | to add a file so it will be tracked (also adds files from the working directory to the staging area)
+git diff | shows the difference between the working directory and the staging area
+git commit -m "message" | permanently stores file changes from the staging area in the repository
+git log | to show commit history
+
+The commit we are currently on is called the HEAD commit. In many cases, the most recently made commit is the HEAD commit
+git show HEAD -> display everything the git log command displays for the HEAD commit, plus all the file changes that were committed.
+git checkout HEAD filename: Discards changes in the working directory.
+git reset HEAD filename: Unstages file changes in the staging area.
+git reset SHA: Can be used to reset to a previous commit in your commit history
+
+git branch -> to check what branch we are on.
+git checkout branch_name -> to change branch
+git merge branch_name -> merge branch_name with the current branch (the current branch is the recieving branch)
+git branch -d branch_name -> delete a branch
+
+git clone remote_location clone_name -> clone a remote repository
+git remote -v -> list the remotes of the project
+git remote add origin <server> -> add local repo to a remote server
+git fetch -> fetch the remote changes made by some other people 
+git merge origin/master -> merge the repo with the master
+git push origin your_branch_name -> push your branch up to the remote, origin. 
