@@ -25,11 +25,14 @@ git clone remote_location clone_name | clone a remote repository
 git remote -v 			     | list the remotes of the project
 git remote add origin <server> 	     | add local repo to a remote server
 git fetch 			     | fetch the remote changes made by some other people 
+git pull			     | pulls down from a remote and instantly merges.
 git merge origin/master 	     | merge the repo with the master
 git push origin your_branch_name     | push your branch up to the remote, origin. 
 
+![Alt text](./image for basic commands.png "Title")
+
 to revert to a previous commit, use this:
 ```bash
-git reset --hard ##commit# ###
+git reset --hard [commit SHA1] 
 git push --force
 ```
