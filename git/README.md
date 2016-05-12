@@ -4,6 +4,8 @@ git init                    | initialize an empty repository
 git status                  | Displays paths that have differences between the index file and the <br> current HEAD commit, paths that have differences between the working <br>tree and the index file, and paths in the working tree that are not tracked<br> by Git (and are not ignored by gitignore).
 git add filename filename_2 | to add a file so it will be tracked (adds files from the working directory<br> to the staging area)
 git diff 		    | shows the difference between the working directory and the staging area<br> (for only the files that are being tracked)
+git diff --cached           | shows the diff between staging area and the last commit
+git diff HEAD               | shows the diff between working ahea
 git commit -m "message"     | permanently stores file changes from the staging area in the repository
 git log                     | to show commit history
 
