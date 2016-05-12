@@ -17,6 +17,7 @@ git show HEAD 		    | display everything the git log command displays for the HE
 git checkout HEAD filename  | Discards changes in a certain file in the working directory.<br> In other words, the file content will return to what it was when the file was committed.
 git reset filename          | Unstages file changes in the staging area.
 git reset SHA               | Can be used to reset to a previous commit in your commit history (detaches head)
+git reset --soft/hard/mixed | [ans](http://stackoverflow.com/a/3528483/4862276)
 git clean -i                | remove the files that are not being tracked in the working directory. 
 git branch                  | to check what branch we are on.
 git checkout branch_name    | to change branch
