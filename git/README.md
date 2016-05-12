@@ -7,6 +7,7 @@ git diff 		    | shows the difference between the working directory and the stag
 git diff --cached           | shows the diff between staging area and the last commit
 git diff HEAD               | shows the diff between working ahea
 git commit -m "message"     | permanently stores file changes from the staging area in the repository
+git commit -a -m "message"  | stage and commit at the same time
 git log                     | to show commit history
 
 	Git Command         |       Description
