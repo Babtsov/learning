@@ -22,6 +22,7 @@ git reset --soft/hard/mixed | [ans](http://stackoverflow.com/a/3528483/4862276)
 git clean -i                | remove the files that are not being tracked in the working directory. 
 git branch                  | to check what branch we are on.
 git checkout branch_name    | to change branch
+git checkout -b branch_name | creates and changes to the new branch
 git merge branch_name       | merge branch_name with the current branch (the current branch is the recieving branch)
 git branch -d branch_name   | delete a branch
 
