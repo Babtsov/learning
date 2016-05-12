@@ -14,7 +14,8 @@ git log                     | to show commit history
 	Git Command         |       Description
 ----------------------------|------------------------------------------------------
 git show HEAD 		    | display everything the git log command displays for the HEAD commit, plus all the file<br> changes that were committed. (The commit we are currently on is called the HEAD commit.<br> In many cases, the most recently made commit is the HEAD commit)
-git checkout HEAD filename  | Discards changes in a certain file in the working directory.<br> In other words, the file content will return to what it was when the file was committed.
+git checkout HEAD filename  | Discards changes so the working directory will return to what it was in last commit
+git checkout -- filename    | discards changes so the working directory will return to what it was in the staging area
 git reset filename          | Unstages file changes in the staging area.
 git reset SHA               | Can be used to reset to a previous commit in your commit history (detaches head)
 git reset --soft/hard/mixed | [ans](http://stackoverflow.com/a/3528483/4862276)
