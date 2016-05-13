@@ -32,6 +32,7 @@ git clone remote_location clone_name | clone a remote repository
 git remote -v 			     | list the remotes of the project
 git remote add origin <server> 	     | add local repo to a remote server
 git fetch 			     | fetch the remote changes made by some other people 
+git branch -r                        | list remote branches
 git pull			     | pulls down from a remote and instantly merges.
 git merge origin/master 	     | merge the repo with the master
 git push -u origin branch_name     | push your branch up to the remote. -u -> origin will be the default destination in the future.. 
