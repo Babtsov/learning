@@ -21,9 +21,10 @@ git reset SHA               | Can be used to reset to a previous commit in your 
 git reset --soft/hard/mixed | [ans](http://stackoverflow.com/a/3528483/4862276)
 git clean -i                | remove the files that are not being tracked in the working directory. 
 git branch                  | to check what branch we are on.
-git checkout branch_name    | to change branch
-git checkout -b branch_name | creates and changes to the new branch
-git merge branch_name       | merge branch_name with the current branch (the current branch is the recieving branch) (git add file_name before mergining in case of a conflict)
+git checkout b_name         | to change branch
+git checkout -b b_name      | creates and changes to the new branch
+git branch -f b_name dest   | forces the move of a branch to dest where dest can be another branch or SHA1
+git merge b_name            | merge branch_name with the current branch (the current branch is the recieving branch) (git add file_name before mergining in case of a conflict)
 git branch -d branch_name   | delete a branch
 
 	Git Command         	     |       Description
