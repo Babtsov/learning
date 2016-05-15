@@ -1,3 +1,4 @@
+
 	Git Command         |       Description
 ----------------------------|------------------------------------------------------
 git init                    | initialize an empty repository
@@ -46,5 +47,6 @@ git reset --hard [commit SHA1]
 git push --force
 ```
 # Git visualizations
+[git visual reference](https://marklodato.github.io/visual-git-guide/index-en.html)  
 [learn git branching](http://learngitbranching.js.org/)  
 [explain-git-with-d3](http://onlywei.github.io/explain-git-with-d3/)
