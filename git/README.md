@@ -45,3 +45,6 @@ to revert to a previous commit, use this:
 git reset --hard [commit SHA1] 
 git push --force
 ```
+# Git visualizations
+[learn git branching](http://learngitbranching.js.org/)  
+[explain-git-with-d3](http://onlywei.github.io/explain-git-with-d3/)
