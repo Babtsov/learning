@@ -33,7 +33,8 @@ git branch -d branch_name   | delete a branch
 git clone remote_location clone_name | clone a remote repository
 git remote -v 			     | list the remotes of the project
 git remote add origin <server> 	     | add local repo to a remote server
-git fetch 			     | fetch the remote changes made by some other people 
+git fetch 			     | fetch the remote changes made by some other people
+git push origin --delete branch_name | delete a remote branch
 git branch -a			     | List both remote-tracking branches and local branches.
 git pull			     | pulls down from a remote and instantly merges.
 git merge origin/master 	     | merge the repo with the master
