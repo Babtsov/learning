@@ -41,3 +41,29 @@ public class Application {
 ```
 ```@SpringBootApplication``` adds @Configuration, @EnableAutoConfiguration, @ComponentScan
 
+### Consuming a RESTful Web Service
+```java
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Quote {...}
+```
+```@JsonIgnoreProperties``` from the Jackson JSON processing library indicates that any properties not bound in this type should be ignored.  
+```java
+@SpringBootApplication
+public class Application implements CommandLineRunner {
+    private static final Logger log = LoggerFactory.getLogger(Application.class);
+    public static void main(String args[]) {
+        SpringApplication.run(Application.class);
+    }
+    @Override
+    public void run(String... args) throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+        Quote quote = restTemplate.getForObject("http://gturnquist-quoters.cfapps.io/api/random", Quote.class);
+        log.info(quote.toString());
+    }
+}
+```
+[REST template documentation](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html)
+
+
+
