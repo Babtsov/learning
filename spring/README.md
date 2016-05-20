@@ -30,6 +30,36 @@ of "World" is used. to set the param, use http://localhost:8080/greeting?name=my
 ```@RestController``` marks the class as a controller where every method returns a domain object instead of a view. 
 It’s shorthand for @Controller and @ResponseBody rolled together.
 
+####[@RequestBody and @ResponseBody](http://www.beabetterdeveloper.com/2013/07/spring-mvc-requestbody-and-responsebody.html)
+
+```java
+    @RequestMapping(method = RequestMethod.GET)
+    @ResponseBody
+    public BookCase getBookCase() {
+        return this.bookCase;
+    }
+
+    @RequestMapping(method = RequestMethod.PUT)
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void setBookCase(@RequestBody BookCase bookCase) {
+        this.bookCase = bookCase;
+    }
+```
+Here is an interation
+```
+1.)
+PUT /bookcase
+Content-Type: text/csv
+"123","Spring in Action"
+Response
+204 No Content
+2.) 
+GET /bookcase
+Accept: text/csv
+Response
+200 OK
+"123","Spring in Action"
+```
 ```java
 @SpringBootApplication
 public class Application {
