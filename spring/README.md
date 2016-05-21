@@ -60,6 +60,7 @@ Response
 200 OK
 "123","Spring in Action"
 ```
+####[@Configuration & @Bean Annotations](http://www.tutorialspoint.com/spring/spring_java_based_configuration.htm) 
 ```java
 @SpringBootApplication
 public class Application {
@@ -69,7 +70,28 @@ public class Application {
     }
 }
 ```
-```@SpringBootApplication``` adds @Configuration, @EnableAutoConfiguration, @ComponentScan
+```@SpringBootApplication``` adds @Configuration, @EnableAutoConfiguration, @ComponentScan  
+Annotating a class with the @Configuration indicates that the class can be used by the Spring IoC container as a source of bean definitions. The @Bean annotation tells Spring that a method annotated with @Bean will return an object that should be registered as a bean in the Spring application context. The simplest possible @Configuration class would be as follows:  
+```java
+package com.tutorialspoint;
+import org.springframework.context.annotation.*;
+@Configuration
+public class HelloWorldConfig {
+
+   @Bean 
+   public HelloWorld helloWorld(){
+      return new HelloWorld();
+   }
+}
+```
+equivalent to the following XML:
+```xml
+<beans>
+   <bean id="helloWorld" class="com.tutorialspoint.HelloWorld" />
+</beans>
+```
+
+
 
 ### Consuming a RESTful Web Service
 ```java
