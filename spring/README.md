@@ -98,6 +98,8 @@ In a multitier application, we will have different layers like presentation, ser
 @Controller – annotate classes at presentation layers level, mainly used in Spring MVC.  
 @Repository – annotate classes at persistence layer, which will act as database repository.  
 
+[@Component vs @Bean](http://stackoverflow.com/questions/10604298/spring-component-versus-bean)
+
 ### Consuming a RESTful Web Service
 ```java
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
