@@ -91,7 +91,12 @@ equivalent to the following XML:
 </beans>
 ```
 
-
+####[Spring @Component, @Service, @Repository, @Controller Difference](http://javapapers.com/spring/spring-component-service-repository-controller-difference/)
+In a multitier application, we will have different layers like presentation, service, business, data access etc. When a class is to be annotated for auto-detection by Spring, then we should use the respective stereotype as below.  
+@Component – generic and can be used across application.  
+@Service – annotate classes at service layer level.  
+@Controller – annotate classes at presentation layers level, mainly used in Spring MVC.  
+@Repository – annotate classes at persistence layer, which will act as database repository.  
 
 ### Consuming a RESTful Web Service
 ```java
