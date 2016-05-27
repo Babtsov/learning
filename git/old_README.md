@@ -36,6 +36,7 @@ git remote add origin <server> 	     | add local repo to a remote server
 git fetch 			     | fetch the remote changes made by some other people
 git push origin --delete branch_name | delete a remote branch
 git branch -a			     | List both remote-tracking branches and local branches.
+git branch -vv			     | shows which branches are tracking what
 git pull			     | pulls down from a remote and instantly merges.
 git merge origin/master 	     | merge the repo with the master
 git push -u origin branch_name       | push your branch up to the remote. -u -> origin will be the default destination in the future.. 
