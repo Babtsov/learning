@@ -125,4 +125,6 @@ public class Application implements CommandLineRunner {
 [REST template documentation](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html)
 
 
+####Spring extras
+[systemEnvironment reference](http://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/env/StandardEnvironment.html) [Spring Expression language](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/expressions.html)
 
