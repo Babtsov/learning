@@ -23,7 +23,7 @@ public class GreetingController {
     }
 }
 ```
-```@RequestMapping``` annotation ensures that HTTP requests to /greeting are mapped to the greeting() method.
+```@RequestMapping``` annotation ensures that HTTP requests to /greeting are mapped to the greeting() method. [Supported method argument types](http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/mvc.html#mvc-ann-methods)  
 ```@RequestParam``` binds the value of the query string parameter name into the name parameter of the greeting() method. 
 This query string parameter is optional (required=false by default): if it is absent in the request, the defaultValue 
 of "World" is used. to set the param, use http://localhost:8080/greeting?name=myName  
