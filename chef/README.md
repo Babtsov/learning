@@ -13,6 +13,6 @@
 ```knife cookbook site download learn_chef_apache2``` get a copy from Chef Supermarket   
 ```knife cookbook upload learn_chef_apache2``` upload the Learn Chef Apache cookbook to your Chef server  
 ```knife cookbook list``` list the cookbooks available on the server  
-```knife bootstrap 52.32.197.208 --ssh-user ubuntu --sudo --identity-file ./babtsov.pem.txt --node-name node1 --run-list 'recipe[learn_chef_apache2]'``` bootstrap the remote node
-```knife ssh 52.32.197.208 'sudo chef-client' --manual-list --ssh-user ubuntu --identity-file ./babtsov.pem.txt``` update the cookbook
+```knife bootstrap 52.32.197.208 --ssh-user ubuntu --sudo --identity-file ./babtsov.pem.txt --node-name node1 --run-list 'recipe[learn_chef_apache2]'``` bootstrap the remote node  
+```knife ssh 52.32.197.208 'sudo chef-client' --manual-list --ssh-user ubuntu --identity-file ./babtsov.pem.txt``` update the cookbook or you can simply log in to the remote node and execute ```sudo chef-client```  
 
