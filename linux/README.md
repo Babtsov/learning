@@ -10,5 +10,6 @@
 ##File permissions, users and groups
 `/etc/passwd` view all of the users on the system  
 `/etc/group` view all the groups and their members  
-`id <username>` print user and group IDs
+`id <username>` print user and group IDs  
 `umask` default permissions for newly created files based on the "base" permissions set defined for files and directories
+`chmod u=rwx,g=rwx,o=rwx <file name>` same as chmod 777 and chmod a=rwx    
