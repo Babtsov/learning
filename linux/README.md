@@ -14,3 +14,6 @@
 `umask` default permissions for newly created files based on the "base" permissions set defined for files and directories
 `chmod u=rwx,g=rwx,o=rwx <file name>` same as chmod 777 and chmod a=rwx    
 `chmod g+s <mydir>` when another user creates a file or directory under such a directory "mydir", the new file or directory will have its group set as the group of the owner of "mydir", instead of the group of the user who creates it.
+
+## Reading logs
+`clear; tail -fn 0 /var/log/applog/validation-service.log` clears the screen, and opens a window that would keep the log updating  
