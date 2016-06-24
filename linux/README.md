@@ -17,3 +17,6 @@
 
 ## Reading logs
 `clear; tail -fn 0 /var/log/applog/validation-service.log` clears the screen, and opens a window that would keep the log updating  
+
+## SSH
+`ssh-keygen -R "server hostname or ip"` to resolve WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED  
