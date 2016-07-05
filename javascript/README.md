@@ -41,3 +41,36 @@ var val = retFunct(function (input) {
 });
 console.log(val); // prints "hi Qaz!?"
 ```
+## Object Oriented Javascript & prototypes
+```javascript
+// Define a new Car "class" 
+function Car(name, color) {
+    this.name = name;
+    this.color = color;
+}
+// each function in javascript comes with a "prototype" object attached to it
+console.log(Car.prototype); // an object 
+// Also, at this point, Car.prototype has a "constructor" property which points back to Car
+console.log(Car.prototype.constructor === Car); // True
+// it also has a __proto__ property, but we won't bother for now.
+
+// now, attach a function to Car's prototype
+Car.prototype.drive = function() {
+    console.log("I'm " + this.name + " and I'm driving.");
+}
+
+// and instantiate a new Car
+var joe = new Car("joe","red");
+
+// when we invoke the following:
+joe.drive();
+// Object joe by itself doesn't have a function named drive(). Nevertheless, the drive() function is
+// resolved by the javascript engine by looking at joe.__proto__ which is the same as Car.prototype
+console.log(joe.__proto__ === Car.prototype); // True
+// So to summerize, each time we use the "new" keyword, it creates an object and sets its __proto__
+// property to point to its "class'" prototype property.
+
+// actually, we can go one more level with __proto__ to see what joe inherits from the root Object
+console.log(joe.__proto__.__proto__ === Object.prototype); // True
+// All objects inherit methods and properties from Object.prototype
+```
