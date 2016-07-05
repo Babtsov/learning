@@ -32,8 +32,9 @@ function greet(name) {
     };
 }
 var retFunct = greet("Qaz");
-// At this point, retFunct still has reference to variable 'greeting' although greet() was executed and is already popped from the stack.
-// This demonstrates the concept of function holding reference to its outer environment. In other words, the variable 'greeting' is inside retFunct's lexical scope.
+// At this point, retFunct still has reference to variable 'greeting' although greet() was executed and
+// is already popped from the stack. This demonstrates the concept of function holding reference to 
+// its outer environment. In other words, the variable 'greeting' is inside retFunct's lexical scope.
 var val = retFunct(function (input) {
     console.log("input inside: " + input); // prints "input inside: hi Qaz!"
     return input + "?";
