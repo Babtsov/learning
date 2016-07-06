@@ -42,6 +42,7 @@ var val = retFunct(function (input) {
 console.log(val); // prints "hi Qaz!?"
 ```
 ## Object Oriented Javascript & prototypes
+### Introduction
 ```javascript
 // Define a new Car "class" 
 function Car(name, color) {
@@ -73,4 +74,5 @@ console.log(joe.__proto__ === Car.prototype); // True
 // actually, we can go one more level with __proto__ to see what joe inherits from the root Object
 console.log(joe.__proto__.__proto__ === Object.prototype); // True
 // All objects inherit methods and properties from Object.prototype
-```
+```  
+#####[See more...](./OOP.md)
