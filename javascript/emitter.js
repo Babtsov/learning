@@ -1,4 +1,4 @@
-// Version 1
+/////////////////////////// Version 1 /////////////////////////// 
 (function (global) {
     "use strict";
     var eventEmitter = function () {
@@ -35,8 +35,12 @@ function assad() {
 subscribe("hey",assad);
 subscribe("coco",assad);
 notifyAll("hey");
-notifyAll("coco")
-// Version 2
+notifyAll("coco");
+
+
+
+
+///////////////////////////  Version 2/////////////////////////// 
 function Emitter(){
 	this.events = {};
 }
