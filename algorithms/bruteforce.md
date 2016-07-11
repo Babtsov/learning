@@ -10,24 +10,26 @@ function getPermutations(list) {
         return [];
     }
     var permutations = [];
-    function permute(leftList, rightList) {
+    
+    var leftList = [];
+    var rightList = list.slice();
+    (function permute() {
         if (rightList.length === 1) {
             permutations.push(leftList.concat(rightList));
             return;
         }
         for (let i = 0, n = rightList.length; i < n; i++) {
             // transfer an element from right to left
-            let transfer = rightList[i];
-            leftList.push(transfer);
+            let current = rightList[i];
+            leftList.push(current);
             rightList.splice(i, 1);
             // recurse
-            permute(leftList,rightList);
+            permute();
             // restore left and right
             leftList.pop();
-            rightList.splice(i, 0, transfer);
+            rightList.splice(i, 0, current);
         }
-    }
-    permute([],list);
+    })();
     return permutations;
 }
 
