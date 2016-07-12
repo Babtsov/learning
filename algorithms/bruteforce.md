@@ -6,6 +6,7 @@
 4. enumerate all the possible permutation of a given list with unique elements.
 
 ### produce a count for a given list for a given length
+javascript
 ```javascript
 function getCounts(list,length) {
     if (list.constructor !== Array || typeof length !== "number") {
@@ -30,6 +31,39 @@ function getCounts(list,length) {
 
 var counts = getCounts([1,2,3],4);
 counts.forEach((count) => console.log(count));
+```
+java
+```java
+public class Solution {
+    
+    @SuppressWarnings("unchecked")
+    public static <T> List<T[]> counter(T[] alphabet, int length) {
+        ArrayList<T[]> counts = new ArrayList<>();
+        int alphabetSize = alphabet.length;
+        for (int i = 0; i < Math.pow(alphabetSize, length); i++) {
+            T[] count = (T[]) new Object[alphabetSize];
+            int enumeration = i;
+            for (int j = alphabetSize - 1; j >= 0; j--) {
+                Object val = alphabet[enumeration % alphabetSize];
+                count[j] = (T) val;
+                enumeration /= alphabetSize;
+            }
+            counts.add(count);
+        }
+        return counts;
+    }
+    public static void main(String[] args) {
+        Integer[] nums = {1,2,3};
+        List<Integer[]> vaList = counter(nums, 5);
+        for (int i = 0; i < vaList.size(); i++) {
+            Object[] arr = vaList.get(i); // CAN'T DO  Integer[] arr = vaList.get(i); why?
+            for (int j = 0; j < arr.length; j++) {
+                System.out.print(arr[j]);
+            }
+            System.out.println();
+        }
+    }
+}
 ```
 
 
