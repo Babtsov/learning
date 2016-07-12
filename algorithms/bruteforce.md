@@ -66,3 +66,34 @@ function getPermutations(list) {
 var permutations = getPermutations([1,2,3]);
 permutations.forEach((permutation) => console.log(permutation));
 ```
+
+# Brute force examples
+
+```java
+public class Solution {
+    
+    public static boolean containsTwoConsecutiveOnes(int num, int length) {
+        for (int j = 0; j < length - 1; j++) {
+            if ((num >> j & 1) == 1 && (num >> (j + 1) & 1) == 1 ) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public static int climbStairs(int n) {
+        int possibilities = 0;
+        for(int i = 0; i < Math.pow(2, n - 1); i++) {
+            if (!containsTwoConsecutiveOnes(i, n - 1)) {
+                possibilities++;
+            }
+        }
+        return possibilities;
+    }
+    public static void main(String[] args) {
+        for(int i = 1; i < 13; i++) {
+            System.out.println(climbStairs(i));
+        }
+    }
+}
+```
