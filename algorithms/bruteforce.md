@@ -44,9 +44,9 @@ public class Solution {
         }
         for (int i = 0; i < Math.pow(alphabetSize, length); i++) {
             @SuppressWarnings("unchecked")
-            T[] count = (T[])Array.newInstance(alphabet[0].getClass(), alphabetSize);
+            T[] count = (T[])Array.newInstance(alphabet[0].getClass(), length);
             int enumeration = i;
-            for (int j = alphabetSize - 1; j >= 0; j--) {
+            for (int j = length - 1; j >= 0; j--) {
                 T val = alphabet[enumeration % alphabetSize];
                 count[j] = val;
                 enumeration /= alphabetSize;
@@ -56,11 +56,10 @@ public class Solution {
         return counts;
     }
     public static void main(String[] args) {
-        List<Integer[]> vaList = counter(new Integer[]{1,2,3}, 5);
-        for (int i = 0; i < vaList.size(); i++) {
-            Integer[] arr = vaList.get(i);
-            for (int j = 0; j < arr.length; j++) {
-                System.out.print(arr[j]);
+        List<Integer[]> vaList = counter(new Integer[]{1,5,3,8}, 5);
+        for (Integer[] count : vaList) {
+            for (Integer num : count) {
+                System.out.print(num + " ");
             }
             System.out.println();
         }
