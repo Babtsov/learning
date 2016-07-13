@@ -36,16 +36,19 @@ java
 ```java
 public class Solution {
     
-    @SuppressWarnings("unchecked")
     public static <T> List<T[]> counter(T[] alphabet, int length) {
-        ArrayList<T[]> counts = new ArrayList<>();
         int alphabetSize = alphabet.length;
+        ArrayList<T[]> counts = new ArrayList<>();
+        if (alphabetSize < 1 || length < 1) {
+            return counts;
+        }
         for (int i = 0; i < Math.pow(alphabetSize, length); i++) {
-            T[] count = (T[]) new Object[alphabetSize];
+            @SuppressWarnings("unchecked")
+            T[] count = (T[])Array.newInstance(alphabet[0].getClass(), alphabetSize);
             int enumeration = i;
             for (int j = alphabetSize - 1; j >= 0; j--) {
-                Object val = alphabet[enumeration % alphabetSize];
-                count[j] = (T) val;
+                T val = alphabet[enumeration % alphabetSize];
+                count[j] = val;
                 enumeration /= alphabetSize;
             }
             counts.add(count);
@@ -53,10 +56,9 @@ public class Solution {
         return counts;
     }
     public static void main(String[] args) {
-        Integer[] nums = {1,2,3};
-        List<Integer[]> vaList = counter(nums, 5);
+        List<Integer[]> vaList = counter(new Integer[]{1,2,3}, 5);
         for (int i = 0; i < vaList.size(); i++) {
-            Object[] arr = vaList.get(i); // CAN'T DO  Integer[] arr = vaList.get(i); why?
+            Integer[] arr = vaList.get(i);
             for (int j = 0; j < arr.length; j++) {
                 System.out.print(arr[j]);
             }
@@ -64,6 +66,7 @@ public class Solution {
         }
     }
 }
+
 ```
 
 
