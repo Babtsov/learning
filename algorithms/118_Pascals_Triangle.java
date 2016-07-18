@@ -3,7 +3,7 @@ public List<List<Integer>> generate(int numRows) {
     if (numRows < 1) {
         return traingle;
     }
-    traingle.add(Arrays.asList(new Integer[]{1}));
+    traingle.add(Arrays.asList(1));
     for (int i = 1; i < numRows; i++) {
         List<Integer> row = new ArrayList<>(i + 1);
         List<Integer> previousRow = traingle.get(i - 1);
