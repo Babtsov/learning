@@ -36,11 +36,11 @@ public String convert(String s, int numRows) {
             rows[j].add(s.charAt(i));
         }
     }
-    char[] rowScanning = new char[s.length()];
-    for (int row = 0, i = 0; row < numRows; row++) {
-        for (int j = 0, rowLen = rows[row].size(); j < rowLen; j++, i++) {
-            rowScanning[i] = rows[row].get(j);
+    StringBuilder sBuilder = new StringBuilder(s.length());
+    for (int row = 0; row < numRows; row++) {
+        for (int j = 0, rowLen = rows[row].size(); j < rowLen; j++) {
+            sBuilder.append(rows[row].get(j));
         }
     }
-    return new String(rowScanning);
+    return sBuilder.toString();
 }
