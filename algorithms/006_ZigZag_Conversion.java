@@ -1,3 +1,4 @@
+// Strategy #1
 public String convert(String s, int numRows) {
     if (numRows <= 1) {
         return s;
@@ -19,4 +20,27 @@ public String convert(String s, int numRows) {
         sBuilder.append(s.charAt(j));
     }
     return sBuilder.toString();
+}
+
+// Strategy #2 (perhaps easier to understand but likely less efficient)
+public String convert(String s, int numRows) {
+    ArrayList<Character>[] rows = (ArrayList<Character>[]) new ArrayList[numRows];
+    for (int i = 0; i < numRows; i++) {
+        rows[i] = new ArrayList<Character>();
+    }
+    for (int i = 0, n = s.length(); i < n; /* i++ is in the nested loops */) {
+        for (int j = 0; i < n && j < numRows; j++, i++) {
+            rows[j].add(s.charAt(i));
+        }
+        for (int j = numRows - 2; i < n && j > 0; j--, i++) {
+            rows[j].add(s.charAt(i));
+        }
+    }
+    char[] rowScanning = new char[s.length()];
+    for (int row = 0, i = 0; row < numRows; row++) {
+        for (int j = 0, rowLen = rows[row].size(); j < rowLen; j++, i++) {
+            rowScanning[i] = rows[row].get(j);
+        }
+    }
+    return new String(rowScanning);
 }
