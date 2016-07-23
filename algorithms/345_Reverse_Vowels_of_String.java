@@ -1,3 +1,6 @@
+private boolean isVowel(char c) {
+    return "aeuioAEUIO".indexOf(c) != -1;
+}
 public String reverseVowels(String s) {
     char[] arr = s.toCharArray();
     int left = 0, right = s.length() - 1;
