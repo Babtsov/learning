@@ -1,8 +1,10 @@
-// recursive strategy
+// recursive strategy: 
+// 1) keep track of the path from the root of the tree to the current node we are visiting, in a "stack-like" data structure. 
+// The path is stored in an ArrayList, and we push and pop according to what level we are in the recursion.
+// 2) if we reached a leaf, iterate backwards through the path, summing up each number accordingly. return the result.
 public int sumNumbers(TreeNode root) {
     return helper(root, new ArrayList<>());
 }
-
 public int helper(TreeNode root,ArrayList<TreeNode> pathToNode) {
     if (root == null) {
         return 0;
@@ -16,4 +18,19 @@ public int helper(TreeNode root,ArrayList<TreeNode> pathToNode) {
     }
     pathToNode.remove(pathToNode.size() - 1); // pop
     return sum;
+}
+
+// Optimized recusrive strategy:
+// Instead of keeping track of the path in a "stack-like" data structure, keep track of the total.
+public int sumNumbers(TreeNode root) {
+    return helper(root, 0);
+}
+public int helper(TreeNode root, int total) {
+    if (root == null) {
+        return 0;
+    }
+    if (root.left == null && root.right == null) {
+        return total + root.val;
+    }
+    return helper(root.left, (total + root.val) * 10) + helper(root.right, (total + root.val) * 10);
 }
