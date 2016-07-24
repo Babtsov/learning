@@ -34,3 +34,30 @@ public int helper(TreeNode root, int total) {
     }
     return helper(root.left, (total + root.val) * 10) + helper(root.right, (total + root.val) * 10);
 }
+// iterative in order strategy
+public int sumNumbers(TreeNode root) {
+    if (root == null) {
+        return 0;
+    }
+    Stack<TreeNode> nodes = new Stack<>();
+    nodes.push(root);
+    Stack<Integer> totals = new Stack<>();
+    totals.push(root.val);
+    int sum = 0;
+    while (!nodes.isEmpty()) {
+        TreeNode node = nodes.pop();
+        int total = totals.pop();
+        if (node.right != null) {
+            nodes.push(node.right);
+            totals.push(total * 10 + node.right.val);
+        }
+        if (node.left != null) {
+            nodes.push(node.left);
+            totals.push(total * 10 + node.left.val);
+        }
+        if (node.left == null && node.right == null) {
+            sum += total;
+        }
+    }
+    return sum;
+}
