@@ -20,3 +20,4 @@
 
 ## SSH
 `ssh-keygen -R "server hostname or ip"` to resolve WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED  
+`ssh-keygen -t rsa` to generate keypair
