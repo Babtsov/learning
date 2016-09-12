@@ -9,7 +9,8 @@
 <kbd>$</kbd> move to the end of the line  
 <kbd>*</kbd> move to the next occurange of the word under the cursor  
 <kbd>g</kbd> <kbd>g</kbd> move to the beginning of the file  
-<kbd>G</kbd> move to the end of the file
+<kbd>G</kbd> move to the end of the file  
+<kbd>shift-a</kbd> moves to the end of the line with an insert mode   
 
 ## modification
 <kbd>d</kbd><kbd>d</kbd> delete the line  
