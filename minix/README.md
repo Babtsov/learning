@@ -21,3 +21,11 @@ The following commands will rebuild only the kernel.
 cd /usr/src/releasetools
 make hdboot
 ```
+[Minix System Call Exercise 1](http://homepages.cs.ncl.ac.uk/nick.cook/csc2025/minix/syscall-exercise1.html)
+```bash
+cd /usr/src/releasetools 
+make services; make install
+```
+
+# Relevant git commands
+[Don't list untracked files](http://stackoverflow.com/questions/594757/how-do-i-do-a-git-status-so-it-doesnt-display-untracked-files-without-using)  `git status -uno`
