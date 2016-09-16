@@ -25,7 +25,10 @@
 `ssh-keygen -t rsa` to generate keypair  
 `scp -P 1023 root@128.227.120.45:~/.ssh/authorized_keys .` copy file from remote to current dir
 
+## Searching
+`grep -r "pattern" ./dir` recursively grep in specific dir  
+`find . -iname "main.c"` Find Files Using Name and Ignoring Case  [(more about find)](http://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/)
+
 ## Other useful commands
 `du -ch | grep total` Show Total Directory Size  
 `ls -1 | wc -l` Count Files  
-`find . -iname "main.c"` Find Files Using Name and Ignoring Case  [(more about find)](http://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/)
