@@ -1,6 +1,7 @@
 # MINIX 3.2.1
 
 * [Minix source code on Github](https://github.com/minix3/minix/tree/R3.2.1)  
+* [Identifier search](http://users.sosdg.org/~qiyong/mxr/ident)  
 * Location of the source code on the minix file system: `/usr/src/`  
 
 ###Included inside `src/`:  
