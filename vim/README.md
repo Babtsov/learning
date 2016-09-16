@@ -19,7 +19,8 @@
 <kbd>d</kbd><kbd>a</kbd><kbd>w</kbd> delete current word  
 
 ## the <kbd>:</kbd> mode
-`set number` to show line numbers
+`set number` to show line numbers  
+`w` save  
 
 ## others 
 <kbd>a</kbd> start inserting after  
