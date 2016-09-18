@@ -1,5 +1,5 @@
 syntax on
-colorscheme default
+colorscheme default "can also use colorscheme morning
 set backspace=2
 set number          "set nonumber to disable
 
