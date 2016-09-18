@@ -1,4 +1,4 @@
-# command mode (normal)
+# Useful Keystrokes
 
 ## selection mode
 <kbd>shift-v</kbd> to enter *linewise* selection mode  
@@ -7,10 +7,13 @@
 ## navigation
 <kbd>0</kbd> move to the beginning of the line  
 <kbd>$</kbd> move to the end of the line  
-<kbd>*</kbd> move to the next occurange of the word under the cursor  
+<kbd>*</kbd> move to the next occurrence of the word under the cursor  
 <kbd>g</kbd> <kbd>g</kbd> move to the beginning of the file  
 <kbd>G</kbd> move to the end of the file  
-<kbd>shift-a</kbd> moves to the end of the line with an insert mode   
+<kbd>shift-a</kbd> moves to the end of the line with an insert mode  
+<kbd>Ctrl-d</kbd> - Move forward 1/2 screen  
+<kbd>Ctrl-u</kbd> - Move back 1/2 screen  
+
 
 ## modification
 <kbd>d</kbd><kbd>d</kbd> delete the line  
