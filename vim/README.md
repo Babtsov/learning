@@ -14,6 +14,12 @@
 <kbd>Ctrl-d</kbd> - Move forward 1/2 screen  
 <kbd>Ctrl-u</kbd> - Move back 1/2 screen  
 
+## Using multiple screens
+`:e fileName` edit another file  
+`:vsplit fileName` vertical split  
+<kbd>ctrl-w</kbd><kbd>ctrl-w</kbd> move cursor to another window  
+`:hide` close current window  
+`:b 2`  open buffer #2 in this window 
 
 ## modification
 <kbd>d</kbd><kbd>d</kbd> delete the line  
