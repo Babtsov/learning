@@ -1,3 +1,6 @@
+# Datasheets
+[LCD screen](https://www.sparkfun.com/datasheets/LCD/HD44780.pdf)
+
 # ESP8266 Wi-Fi Module
 ## useful links
 [some interesting guide (helped me out)](http://rancidbacon.com/files/kiwicon8/ESP8266_WiFi_Module_Quick_Start_Guide_v_1.0.4.pdf)  
