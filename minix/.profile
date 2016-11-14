@@ -13,7 +13,7 @@ esac
 
 # Shell configuration.
 unset EDITOR; . $HOME/.ashrc
-
+alias uno="git status -uno"
 search() {
     grep -r $1 /usr/include/
 }
