@@ -1,3 +1,22 @@
+# Project 2 strategy:
+## Flow of control
+1. user calls library function `plog_state_start(int PID)`
+2. The library generates a system call to PM 
+3. PM makes a kernel call (to the kernel (obviously)). [here is a tutorial on how to add kernel call](http://wiki.minix3.org/doku.php?id=developersguide%3Anewkernelcall)
+4. kernel starts tracking the process’ transitions.  
+
+### Notes: 
+* PM will accept the PID and scan through its mproc (process table) to find what index this PID corresponds to. Then, it will send this index number to the kernel (through the kernel call).  
+* The kernel will retrieve the index number it got from pm, and will use `proc_addr(n)` to index its corresponding slot in its own process table (this is needed because there is an offset between the two process tables).  
+
+## State transitions
+`pick_proc(void)` // the process goes from __ready__ to __running__  
+`enqueue_head(struct proc * rp)` // the process goes from __running__ to __ready__
+
+
+
+
+
 # MINIX 3.2.1
 
 * [Minix source code on Github](https://github.com/minix3/minix/tree/R3.2.1)  
