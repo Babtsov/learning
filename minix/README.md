@@ -49,3 +49,6 @@ make services; make install
 
 # Relevant git commands
 [Don't list untracked files](http://stackoverflow.com/questions/594757/how-do-i-do-a-git-status-so-it-doesnt-display-untracked-files-without-using)  `git status -uno`
+
+# some potentially useful links
+http://condor.depaul.edu/glancast/443class/docs/lecSep14.html  
