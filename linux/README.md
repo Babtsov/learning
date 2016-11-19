@@ -1,3 +1,4 @@
+# Learning Linux
 ## Various useful commands
 `du -ch | grep total` Show Total Directory Size  
 `ls -1 | wc -l` Count Files  
