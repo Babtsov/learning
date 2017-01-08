@@ -1,4 +1,4 @@
-# Commands Database
+# Interesting Commands
 `time` run programs and summarize system resource usage  
 `du` estimate file space usage  
 `pidof` find the process ID of a running program  
@@ -8,3 +8,4 @@
 `kill` send a signal to a process  
 `netstat` Print network connections, routing tables, interface statistics, etc.  
 `stat` display file or file system status  
+`ldd` print shared object dependencies
