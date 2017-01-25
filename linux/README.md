@@ -8,4 +8,5 @@
 `kill` send a signal to a process  
 `netstat` Print network connections, routing tables, interface statistics, etc.  
 `stat` display file or file system status  
-`ldd` print shared object dependencies
+`ldd` print shared object dependencies  
+`dig` DNS lookup utility  
