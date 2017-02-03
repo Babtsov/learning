@@ -7,6 +7,7 @@
 `sqlmigrate` command takes migration names and returns their SQL  
 `check` checks for any problem in the project  
 `shell` enter the django shell
+`createsuperuser` create super user for the admin site
 
 ## Make a model change
 * Change your models (in models.py).
@@ -24,4 +25,11 @@ q.id
 q.question_text
 q.pub_date
 Question.objects.all() # show all questions in database
+Question.objects.filter(id=1) #query by id
+Question.objects.filter(question_text__startswith='What') #query by other pattern
+Question.objects.get(id=2) # can also get
+Question.objects.get(pk=1) # use primary key
+q.choice_set.all()
+q.choice_set.create(choice_text='Not much', votes=0)
+c = q.choice_set.filter(choice_text__startswith='Just hacking')
 ```
