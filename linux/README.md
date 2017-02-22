@@ -5,6 +5,7 @@
 `printenv` print all or part of environment
 `wc` print newline, word, and byte counts for each file  
 `file` determine file type  
+`type` can be used to check if a command is a shell builtin  
 `kill` send a signal to a process  
 `netstat` Print network connections, routing tables, interface statistics, etc.  
 `stat` display file or file system status  
