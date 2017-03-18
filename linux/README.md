@@ -11,3 +11,4 @@
 `stat` display file or file system status  
 `ldd` print shared object dependencies  
 `dig` DNS lookup utility  
+`uname` print system information  
