@@ -17,3 +17,6 @@
 set-option -g prefix C-a
 ```
 and then `tmux source-file ~/.tmux.conf` to apply changes
+
+# src
+https://danielmiessler.com/study/tmux/
