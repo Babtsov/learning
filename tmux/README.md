@@ -1,13 +1,18 @@
 # commands
+`d` - detach 
+## sessions
 `s` - show sessions  
-`d` - detach  
+`$` - rename session  
+## panes
 `x` - kill the current pane  
-`c` - create new window  
-`,` - rename the window  
 `%` - create vertical pane  
 `"` - create horizontal pane  
 `o` - toggle between panes but `<arrow>` works too.  
-`[` - scrollback (for mac, use `fun` & buttons for page up/down)  
+`z` - zoom in and out of a pane  
+`[` - scrollback  
+## windows
+`c` - create new window  
+`,` - rename the window  
 # from the terminal
 `tmux new -s session-name` - create session   
 `tmux a -t session-name` - attach to a specific session   
