@@ -14,7 +14,12 @@
 
 # config `~/.tmux.conf`
 ```bash
+# prefix is ^a
 set-option -g prefix C-a
+# mouse support is on by default
+set-option -g mouse on
+# toggle mouse support with m
+bind m set-option -g mouse
 ```
 and then `tmux source-file ~/.tmux.conf` to apply changes
 
