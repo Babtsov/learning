@@ -14,6 +14,8 @@
 `c` - create new window  
 `,` - rename the window  
 # from the terminal
+## sessions
+`tmux ls` - list current sessions  
 `tmux new -s session-name` - create session   
 `tmux a -t session-name` - attach to a specific session   
 
