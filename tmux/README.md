@@ -21,7 +21,7 @@
 
 # config `~/.tmux.conf`
 ```bash
-# prefix is ^a
+# prefix is ^s
 set-option -g prefix C-s
 # mouse support is on by default
 set-option -g mouse on
