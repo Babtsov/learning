@@ -27,6 +27,11 @@ set-option -g prefix C-s
 set-option -g mouse on
 # toggle mouse support with m
 bind m set-option -g mouse
+# increase the scrollback buffer
+set-option -g history-limit 10000
+#current dir for vertical and horizontal splits
+bind '"' split-window -c "#{pane_current_path}"
+bind % split-window -h -c "#{pane_current_path}"
 ```
 and then `tmux source-file ~/.tmux.conf` to apply changes
 
