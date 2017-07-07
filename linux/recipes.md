@@ -35,8 +35,8 @@
 `printenv` print all environment variables (of the shell)  
 `set` show both the shell (bash) and environment variables  
 `export EDITOR=/usr/bin/vim` to add/change new environment variable to the shell.  
-`cat /proc/<pid>/environ` to list the environment variables of a particular process 
-
+`cat /proc/<pid>/environ` to list the environment variables of a particular process  
+`sudo lsof -i :3300` shoes what processes listening on the port
 ## File permissions, users and groups
 `/etc/passwd` view all of the users on the system  
 `/etc/group` view all the groups and their members  
