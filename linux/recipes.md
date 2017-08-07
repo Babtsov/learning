@@ -7,6 +7,7 @@
 
 ## Search
 `grep -r "pattern" ./dir` recursively grep in specific dir  
+`echo $PATH | sed "s/:/\n/g"` sed example  
 `find . -iname "main.c"` Find Files Using Name and Ignoring Case [[more]](http://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/)  
 
 ## Compres
