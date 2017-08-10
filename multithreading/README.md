@@ -21,3 +21,4 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 ```
+Apache - 'worker', 'event', 'prefork': https://serverfault.com/questions/383526/how-do-i-select-which-apache-mpm-to-use
