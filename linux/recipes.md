@@ -3,6 +3,7 @@
 `du -ch | grep total` Show Total Directory Size  
 `ls -1 | wc -l` Count Files  
 `!!` repeat the previous command [[more]](http://craig-russell.co.uk/2011/09/28/bang-bang-command-recall-in-linux.html)  
+`qwe=$(!!)` store the output of the previous command in a variable. recomputes  
 `cd -` change to previous directory  
 
 ## Search
