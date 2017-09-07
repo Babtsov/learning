@@ -15,3 +15,4 @@ control x control a -> toggle between GUI and CLI mode
 
 # Ref
 http://blog.yourlabs.org/post/82623391224/gdb-debugging-basics  
+http://visualgdb.com/gdbreference/commands/  
