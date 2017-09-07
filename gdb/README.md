@@ -1,6 +1,8 @@
 # Commanda
 `info threads` show thread information  
 `info locals` show info about local variables  
+`info functions` show all defined functions  
+`info variables` show all variables  
 `info break` show breakpoints  
 `whatis <name>` show the type of a variable  
 `where` or `bt` shows the backtrace & values of the args to the functions  
