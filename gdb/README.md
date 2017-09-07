@@ -4,3 +4,5 @@
 `where` or `bt` shows the backtrace & values of the args to the functions  
 `frame` similar to backtrace but also shows the current line
 
+*tricks*
+`p *(((char **) 0x7fffffffdbf8)+3)` 
