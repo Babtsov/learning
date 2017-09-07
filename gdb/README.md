@@ -10,4 +10,8 @@
 `delete <break point number>` delete breakpoint
 
 # Tricks  
-`p *(((char **) 0x7fffffffdbf8)+3)` 
+control x control a -> toggle between GUI and CLI mode  
+`p *(((char **) 0x7fffffffdbf8)+3)`  example of printing argv  
+
+# Ref
+http://blog.yourlabs.org/post/82623391224/gdb-debugging-basics  
