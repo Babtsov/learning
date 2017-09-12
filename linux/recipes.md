@@ -5,6 +5,7 @@
 `!!` repeat the previous command [[more]](http://craig-russell.co.uk/2011/09/28/bang-bang-command-recall-in-linux.html)  
 `qwe=$(!!)` store the output of the previous command in a variable. recomputes  
 `cd -` change to previous directory  
+`readelf -a a.out -W` read the ELF file.  
 
 ## Search
 `grep -r "pattern" ./dir` recursively grep in specific dir  
