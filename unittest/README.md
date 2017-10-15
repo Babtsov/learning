@@ -1,6 +1,17 @@
 # Resources:
 ## google talk: https://www.youtube.com/watch?v=wEhu57pih5w
-## Summary:
+
+## How to write hard to test code:
+* mixing the new operator with business logic
+* looking for things
+* work in the consteuctor
+* having a global state
+* singletons (another case of global state)
+* static methods (not including a "leaf method")
+* deep inheritance 
+* too many conditionals
+
+## Other interesting points:
 * we can test at different levels
 * unit testing is testing at the class level
 * functional testing is testing at the "group of classes" level (you want to see if a group of classes work together properly)
