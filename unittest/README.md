@@ -2,9 +2,9 @@
 ## google talk: https://www.youtube.com/watch?v=wEhu57pih5w
 
 ## How to write hard to test code:
-* mixing the new operator with business logic
-* looking for things
-* work in the consteuctor
+* mixing the object creation code with business logic
+* looking for things (fetching stuff from the network in a non-isolatable way)
+* work in the constructor
 * having a global state
 * singletons (another case of global state)
 * static methods (not including a "leaf method")
