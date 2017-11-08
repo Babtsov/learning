@@ -17,6 +17,9 @@ byte at a time or a word at a time (4 bytes).
 int offset = 4;
 int b = *(0x2002 + offset*multiplier); // seems like it's useful for array indexing
 ```
+general format: `movl  BEGINNINGADDRESS(,%INDEXREGISTER,WORDSIZE)`  
+specific example: `movl data_items(,%edi,4), %eax`
+
 5. indirect addressing mode  
  the instruction contains a register that contains a pointer to where the data should be accessed. For example, if we used indirect
  addressing mode and specified the %eax register, and the %eax register contained the value 4, whatever value was at memory 
