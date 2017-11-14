@@ -10,6 +10,7 @@
 ## Search
 `grep -r "pattern" ./dir` recursively grep in specific dir  
 `find . -iname "main.c"` Find Files Using Name and Ignoring Case [[more]](http://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/)  
+`find . -regex '.*qaz.*'` Find file by regex  
 
 ## sed & awk
 `sed '/QAZ/d'` delete every line containing QAZ  
