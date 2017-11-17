@@ -8,5 +8,5 @@ done <peptides.txt
 ```bash
 while read -r line; do
     echo "... $line ..."
-done <<< "$list"
+done <<< "$list" # for a `here string` https://linux.die.net/abs-guide/x15683.html
 ```
