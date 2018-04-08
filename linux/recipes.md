@@ -54,6 +54,7 @@
 `chmod u=rwx,g=rwx,o=rwx <file name>` same as chmod 777 and chmod a=rwx    
 `chmod g+s <mydir>` when another user creates a file or directory under such a directory "mydir", the new file or directory will have its group set as the group of the owner of "mydir", instead of the group of the user who creates it   
 `chgrp group_name file/directory_name` change the group ownership of a file or directory    
+`usermod -aG wheel username` add user to the sudoers in centos  
 
 ## File related commands
 `dd if=/dev/zero of=output.dat  bs=1M  count=24` create a 24 mb file named output.dat  
