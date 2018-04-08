@@ -34,6 +34,8 @@
 `ssh -p 3022 root@localhost` use ssh to connect at port 3022  
 `scp -P 1023 root@128.227.120.45:~/.ssh/authorized_keys .` copy file from remote to current dir  
 `ssh-keygen -E md5 -lf ~/.ssh/github_rsa.pub` to see the fingerprint of a particular key  
+[login vs non login shell](https://unix.stackexchange.com/questions/324359/why-a-login-shell-over-a-non-login-shell)  
+
 
 ## Processes & Environment variables
 `pidof <name>` to list the pid(s) of a particular process
