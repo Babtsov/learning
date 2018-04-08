@@ -57,8 +57,9 @@
 `dd if=/dev/zero of=output.dat  bs=1M  count=24` create a 24 mb file named output.dat  
 
 ## patitions and mounts
-`sudo parted --list` display paritition table information [explanation about different partition types](https://unix.stackexchange.com/questions/289389/what-are-the-differences-between-the-various-partition-tables)
-`sudo cfdisk /dev/sdc` modify partitions
-`mkfs -v -t ext4 /dev/<xxx>` format partition to the ext4 FS
-`mkswap /dev/<xxx>` format partition as a swap
-`lsblk` - list block devices
+`sudo parted --list` display paritition table information [explanation about different partition types](https://unix.stackexchange.com/questions/289389/what-are-the-differences-between-the-various-partition-tables)  
+`sudo cfdisk /dev/sdc` modify partitions  
+`mkfs -v -t ext4 /dev/<xxx>` format partition to the ext4 FS  
+`mkswap /dev/<xxx>` format partition as a swap  
+`lsblk` - list block devices  
+`mount -v -t ext4 /dev/<xxx> $LFS` mount as ext4 file system  
