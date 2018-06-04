@@ -35,3 +35,6 @@ https://blasphemousbits.wordpress.com/2007/05/04/learning-emacs-part-4-buffers-w
 
 jump to previous position
 http://ergoemacs.org/emacs/emacs_jump_to_previous_position.html
+
+
+term mode: https://www.gnu.org/software/emacs/manual/html_node/emacs/Term-Mode.html#Term-Mode
