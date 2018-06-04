@@ -5,7 +5,12 @@
 `C-x C-c` : Exit emacs.  
 
 ## buffers/windows
-`C-x C-b` show buffers  
+`C-x b`	Switch Buffers  
+`C-x C-b`	Get a List of Buffers  
+`C-x o`	Switch to Other Window  
+`C-x 1`	Close Other Window  
+`C-x 2`	Split the Screen Horizontally  
+
 
 ## navigate
 `M-g g` goto line  
@@ -24,12 +29,9 @@ b     f
 
 
 
-
-
-
-
-
-
-
 src:
+blog
 https://blasphemousbits.wordpress.com/2007/05/04/learning-emacs-part-4-buffers-windows-and-frames/
+
+jump to previous position
+http://ergoemacs.org/emacs/emacs_jump_to_previous_position.html
