@@ -1,6 +1,8 @@
 (global-linum-mode 1)
 (setq linum-format "%4d\u2502")
 (menu-bar-mode -1)
+(winner-mode 1)
+
 ;; store all backup and autosave files in the tmp dir
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
