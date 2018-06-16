@@ -6,11 +6,12 @@
 
 ## buffers/windows
 `C-x b`	Switch Buffers  
+`C-x 4 b` Switch buffer in the other window  
 `C-x C-b`	Get a List of Buffers  
 `C-x o`	Switch to Other Window  
 `C-x 1`	Close Other Window  
 `C-x 2`	Split the Screen Horizontally  
-
+`C-c <left>` winner mode go back to the previous window config 
 
 ## navigate
 `M-g g` goto line  
@@ -34,8 +35,8 @@ if there are multiple definitions then `C-,` or `C-.` to jump between them
 
 ## help
 `C-h w <command-name>` find keybinding for a command (where)  
-`C-h k key-sequence` find the bound key sequence for a command name  
-
+`C-h k <key-sequence>` find the bound key sequence for a command name  
+`C-h v <var>` Display the value and documentation of variable var (describe-variable).  
 
 
 src:
