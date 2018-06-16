@@ -25,7 +25,16 @@ b     f
 `M-<` : move the cursor to the beginning of the file  
 `M->` : move the cursor to the end of the file  
 
+create TAGS: `find . -name "*.[chS]" -print | xargs etags`  
+`M-.` jump to definition  
+`M-,` go back  
+`M-?` find refernces  
+if there are multiple definitions then `C-,` or `C-.` to jump between them  
 
+
+## help
+`C-h w <command-name>` find keybinding for a command (where)  
+`C-h k key-sequence` find the bound key sequence for a command name  
 
 
 
