@@ -3,6 +3,7 @@
 (menu-bar-mode -1)
 (winner-mode 1)
 (defalias 'yes-or-no-p 'y-or-n-p) ;; enough to write just y/n
+(defalias 'list-buffers 'ibuffer) ;; make ibuffer default
 
 ;; store all backup and autosave files in the tmp dir
 (setq backup-directory-alist
