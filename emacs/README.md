@@ -5,6 +5,7 @@
 `C-x C-c` : Exit emacs.  
 
 ## buffers/windows
+Resource [buffers](http://ergoemacs.org/emacs/emacs_buffer_management.html)  
 `C-x b`	Switch Buffers  
 `C-x 4 b` Switch buffer in the other window  
 `C-x C-b`	Get a List of Buffers  
