@@ -9,7 +9,7 @@
 (defalias 'list-buffers 'ibuffer) ;; make ibuffer default
 (setq gdb-many-windows 1)  ;; enter gdb in many windows by default
 (windmove-default-keybindings) ;; use shift + arrows to move between windows
-
+(global-set-key (kbd "C-x m") 'imenu) ;; bind to imenu instead of mail
 ;; store all backup and autosave files in the tmp dir
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
