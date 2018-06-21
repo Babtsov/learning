@@ -1,8 +1,9 @@
 ## save and exit
-`C-x C-s` : Save the current file  
-`C-x C-s y`: Save current file and exit
 `C-x C-w` : Write the file to a different name (this is the same as Save As in most modern programs.  
 `C-x C-c` : Exit emacs.  
+
+## selectnig
+`C-x space` rectangle-mark-mode  
 
 ## buffers/windows
 Resource [buffers](http://ergoemacs.org/emacs/emacs_buffer_management.html)  
