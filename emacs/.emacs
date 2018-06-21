@@ -7,9 +7,10 @@
 (winner-mode 1)    ;; winner to quickly restore window config
 (defalias 'yes-or-no-p 'y-or-n-p) ;; enough to write just y/n
 (defalias 'list-buffers 'ibuffer) ;; make ibuffer default
-(setq gdb-many-windows 1)  ;; enter gdb in many windows by default
 (windmove-default-keybindings) ;; use shift + arrows to move between windows
 (global-set-key (kbd "C-x m") 'imenu) ;; bind to imenu instead of mail
+(global-set-key (kbd "C-x r") 'gdb-restore-windows)
+
 ;; store all backup and autosave files in the tmp dir
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
