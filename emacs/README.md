@@ -4,6 +4,7 @@
 
 ## selecting
 `C-x space` rectangle-mark-mode  
+`C-x h` select the whole file  
 ## tags
 ` M-x visit-tags-table` load the tag table (might need to reload it)  
 
