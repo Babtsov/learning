@@ -2,8 +2,10 @@
 `C-x C-w` : Write the file to a different name (this is the same as Save As in most modern programs.  
 `C-x C-c` : Exit emacs.  
 
-## selectnig
+## selecting
 `C-x space` rectangle-mark-mode  
+## tags
+` M-x visit-tags-table` load the tag table (might need to reload it)  
 
 ## buffers/windows
 Resource [buffers](http://ergoemacs.org/emacs/emacs_buffer_management.html)  
