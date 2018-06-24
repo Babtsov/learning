@@ -20,3 +20,4 @@ http://blog.yourlabs.org/post/82623391224/gdb-debugging-basics
 http://visualgdb.com/gdbreference/commands/  
 hint to find how many times a loop was executed: https://stackoverflow.com/questions/2956889/how-to-make-a-gdb-breakpoint-only-break-after-the-point-is-reached-a-given-numbe  
 `x` command: http://www.delorie.com/gnu/docs/gdb/gdb_56.html  
+oracle gdb tips: https://blogs.oracle.com/linux/8-gdb-tricks-you-should-know-v2  
