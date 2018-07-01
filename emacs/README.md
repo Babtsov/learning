@@ -5,9 +5,10 @@
 ## selecting
 `C-x space` rectangle-mark-mode  
 `C-x h` select the whole file  
+`C-M-\` indent-region (auto format)  
 ## tags
 ` M-x visit-tags-table` load the tag table (might need to reload it)  
-
+create TAGS: `find . -name "*.[chS]" -print | xargs etags`  
 ## buffers/windows
 Resource [buffers](http://ergoemacs.org/emacs/emacs_buffer_management.html)  
 `C-x b`	Switch Buffers  
@@ -31,7 +32,7 @@ b     f
 `M-<` : move the cursor to the beginning of the file  
 `M->` : move the cursor to the end of the file  
 
-create TAGS: `find . -name "*.[chS]" -print | xargs etags`  
+
 `M-.` jump to definition  
 `M-,` go back  
 `M-?` find refernces  
