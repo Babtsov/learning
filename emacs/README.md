@@ -2,10 +2,12 @@
 `C-x C-w` : Write the file to a different name (this is the same as Save As in most modern programs.  
 `C-x C-c` : Exit emacs.  
 
-## selecting
+## selecting / regions 
 `C-x space` rectangle-mark-mode  
 `C-x h` select the whole file  
 `C-M-\` indent-region (auto format)  
+[copy and paste regions](https://www.emacswiki.org/emacs/CopyAndPaste)  
+
 ## tags
 ` M-x visit-tags-table` load the tag table (might need to reload it)  
 create TAGS: `find . -name "*.[chS]" -print | xargs etags`  
