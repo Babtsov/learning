@@ -8,8 +8,13 @@
 (defalias 'yes-or-no-p 'y-or-n-p) ;; enough to write just y/n
 (defalias 'list-buffers 'ibuffer) ;; make ibuffer default
 (windmove-default-keybindings) ;; use shift + arrows to move between windows
+
 (global-set-key (kbd "C-x m") 'imenu) ;; bind to imenu instead of mail
-(global-set-key (kbd "C-x r") 'gdb-restore-windows)
+(global-set-key (kbd "C-x r") 'gdb-restore-windows) ;; reload when in gdb-many-windows
+
+(electric-pair-mode 1) ;; autocomplete parenthesis
+(setq tags-revert-without-query 1) ;; if tag file changes, reload it without asking
+
 
 ;; store all backup and autosave files in the tmp dir
 (setq backup-directory-alist
