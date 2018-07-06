@@ -21,3 +21,24 @@
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
+
+
+;; helm specific config
+
+(require 'helm-config)
+(helm-mode 1)
+(define-key global-map [remap find-file] 'helm-find-files)
+(define-key global-map [remap occur] 'helm-occur)
+(define-key global-map [remap list-buffers] 'helm-buffers-list)
+(define-key global-map [remap dabbrev-expand] 'helm-dabbrev)
+(define-key global-map [remap execute-extended-command] 'helm-M-x)
+
+(global-set-key (kbd "C-s")  'swiper-helm)
+
+;; Make Helm window at the bottom WITHOUT using any extra package
+;; https://www.reddit.com/r/emacs/comments/345vtl/make_helm_window_at_the_bottom_without_using_any/
+(add-to-list 'display-buffer-alist
+                    `(,(rx bos "*helm" (* not-newline) "*" eos)
+                         (display-buffer-in-side-window)
+                         (inhibit-same-window . t)
+                         (window-height . 0.4)))
