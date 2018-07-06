@@ -36,9 +36,8 @@
 (global-set-key (kbd "C-s")  'swiper-helm)
 
 ;; Make Helm window at the bottom WITHOUT using any extra package
+(setq helm-always-two-windows nil)
+(setq helm-display-buffer-default-height 23)
+(setq helm-default-display-buffer-functions '(display-buffer-in-side-window))
+;; another alternative
 ;; https://www.reddit.com/r/emacs/comments/345vtl/make_helm_window_at_the_bottom_without_using_any/
-(add-to-list 'display-buffer-alist
-                    `(,(rx bos "*helm" (* not-newline) "*" eos)
-                         (display-buffer-in-side-window)
-                         (inhibit-same-window . t)
-                         (window-height . 0.4)))
