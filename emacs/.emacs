@@ -34,6 +34,7 @@
 (define-key global-map [remap execute-extended-command] 'helm-M-x)
 
 (global-set-key (kbd "C-s")  'swiper-helm)
+(global-set-key (kbd "C-x m") 'helm-imenu-in-all-buffers) ;; bind to helm imenu instead of mail
 
 ;; Make Helm window at the bottom WITHOUT using any extra package
 (setq helm-always-two-windows nil)
