@@ -42,3 +42,6 @@
 (setq helm-default-display-buffer-functions '(display-buffer-in-side-window))
 ;; another alternative
 ;; https://www.reddit.com/r/emacs/comments/345vtl/make_helm_window_at_the_bottom_without_using_any/
+
+(require 'helm-xref)
+(setq xref-show-xrefs-function 'helm-xref-show-xrefs)
