@@ -13,6 +13,7 @@
 (global-set-key (kbd "C-x r") 'gdb-restore-windows) ;; reload when in gdb-many-windows
 
 (electric-pair-mode 1) ;; autocomplete parenthesis
+(setq transient-mark-mode nil) ;; disable transient-mark-mode
 (setq tags-revert-without-query 1) ;; if tag file changes, reload it without asking
 
 
