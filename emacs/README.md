@@ -7,6 +7,7 @@
 `C-x h` select the whole file  
 `C-M-\` indent-region (auto format)  
 [copy and paste regions](https://www.emacswiki.org/emacs/CopyAndPaste)  
+jump to previous using marks http://ergoemacs.org/emacs/emacs_jump_to_previous_position.html  
 
 ## tags
 ` M-x visit-tags-table` load the tag table (might need to reload it)  
