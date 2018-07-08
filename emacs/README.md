@@ -9,6 +9,10 @@
 [copy and paste regions](https://www.emacswiki.org/emacs/CopyAndPaste)  
 jump to previous using marks http://ergoemacs.org/emacs/emacs_jump_to_previous_position.html  
 
+## registers
+[saving positions](https://www.gnu.org/software/emacs/manual/html_node/emacs/Position-Registers.html)  
+[preserve window configuration](https://stackoverflow.com/questions/2572950/preserve-window-layout-in-emacs)  
+
 ## tags
 ` M-x visit-tags-table` load the tag table (might need to reload it)  
 create TAGS: `find . -name "*.[chS]" -print | xargs etags`  
