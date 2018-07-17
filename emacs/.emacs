@@ -16,6 +16,8 @@
 (setq transient-mark-mode nil) ;; disable transient-mark-mode
 (setq tags-revert-without-query 1) ;; if tag file changes, reload it without asking
 
+;; https://stackoverflow.com/questions/11700934/emacs-set-and-toggle-show-trailing-whitespace
+(custom-set-variables '(show-trailing-whitespace t)) ;; highlight annoying trailing whitespace
 
 ;; store all backup and autosave files in the tmp dir
 (setq backup-directory-alist
