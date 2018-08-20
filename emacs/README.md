@@ -24,8 +24,8 @@ Resource [buffers](http://ergoemacs.org/emacs/emacs_buffer_management.html)
 `C-x o`	Switch to Other Window  
 `C-x 1`	Close Other Window  
 `C-x 2`	Split the Screen Horizontally  
-`C-c <left>` winner mode go back to the previous window config 
-
+`C-c <left>` winner mode go back to the previous window config  
+`M-x diff-buffer-with-file` check what has been modified  
 ## navigate
 `M-g g` goto line  
 ```
