@@ -1,6 +1,8 @@
 # script to help installing tmux on centos 7
 # src: https://gist.github.com/pierreprinetti/86fbcd28e5cc1b3e0b9b762e4c12fad2
 
+sudo yum install automake
+
 # remove old pkgs
 sudo yum remove libevent libevent-devel libevent-headers
 
@@ -20,5 +22,6 @@ cd /usr/local/src
 sudo curl -L https://github.com/tmux/tmux/archive/2.5.tar.gz -o tmux-2.5.tar.gz
 sudo tar -xvzf tmux-2.5.tar.gz
 cd tmux-2.5
+sudo ./autogen.sh
 sudo ./configure && sudo make
 sudo make install
