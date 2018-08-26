@@ -13,3 +13,5 @@ this is because:
 go packages explanation [src](https://thenewstack.io/understanding-golang-packages/)  
 go standard lib packages: https://golang.org/pkg/  
 
+## other resources
+go vs python: http://govspy.peterbe.com/  
