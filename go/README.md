@@ -10,5 +10,6 @@ this is because:
 /usr/lib/golang
 ```
 
-go packages [src](https://thenewstack.io/understanding-golang-packages/)
+go packages explanation [src](https://thenewstack.io/understanding-golang-packages/)  
+go standard lib packages: https://golang.org/pkg/  
 
