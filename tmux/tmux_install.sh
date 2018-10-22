@@ -25,3 +25,6 @@ cd tmux-2.5
 sudo ./autogen.sh
 sudo ./configure && sudo make
 sudo make install
+
+# install tmux on ubutnu 
+# https://undebugable.wordpress.com/2017/01/29/install-tmux-at-ubuntu-14-04-computer/
