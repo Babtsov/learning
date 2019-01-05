@@ -1,5 +1,6 @@
 * two pass https://coderanger.net/two-pass/
 * DSL hint https://stackoverflow.com/questions/5851127/change-the-context-binding-inside-a-block-in-ruby
+* things I wish I knew https://zwischenzugs.com/2017/11/25/ten-things-i-wish-id-known-about-chef/
 
 [beginner guide](https://www.linode.com/docs/applications/chef/beginners-guide-chef)
 ### local mode
