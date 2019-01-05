@@ -1,3 +1,6 @@
+* two pass https://coderanger.net/two-pass/
+* DSL hint https://stackoverflow.com/questions/5851127/change-the-context-binding-inside-a-block-in-ruby
+
 [beginner guide](https://www.linode.com/docs/applications/chef/beginners-guide-chef)
 ### local mode
 ```chef-client --local-mode hello.rb``` Execute the client locally  
