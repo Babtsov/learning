@@ -32,12 +32,7 @@ Destination address: 67:F4:68:35:F9:2D
 Data: <....... 1.5 KB of arbitrary data .......>
 ```
 
-Each packet will be trasmitted from computer A to the switch through the cable connecting computer A to interface `1` of the switch. Then the switch will take this information and transmit it to computer B through interface 2.
-So basically, the data flow will be something like this:
-```
-(Computer A) --> (Switch interface 1) ---> (Switch interface 2) ---> (Computer B)
-```
-
+Each packet will be trasmitted from computer A to the switch through the cable connecting computer A to interface `1` of the switch. Now that the switch got the packet, how does it know which interface computer B is connected? At first it actually doesn't know, but eventually it learns it automatically. whenever the switch doesn't know, it simply duplicates the information and sends it through all the interfaces! So in this example, the switch transmitted the packet through interfaces 2 3 and 4. This means that computers B, C and D got the packet whose destination address is `67:F4:68:35:F9:2D`. Each computer accepts the packet and compares its own MAC address to the destination address of the packet, and if they don't match, it simply ignores the packet. In this case, the MAC address only matches for computer B, so computer C and D will simply ignore the packet because it was not meant to be sent to them.
 
 
 
